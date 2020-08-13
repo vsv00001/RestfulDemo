@@ -2,7 +2,6 @@ resources:
 - name: git-repo
   type: git
   source:
-    uri: git@github.com:ruanbekker/docker-remote-tunnel.git
     uri: https://github.com/vsv00001/RestfulDemo.git
     branch: master
     username: vsv0007@outlook.com
