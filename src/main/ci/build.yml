@@ -14,7 +14,7 @@ resources:
     password: "Olive!18"   
 
 jobs:
-- name: publish
+- name: main
   plan:
   - get: git-repo
     trigger: true
