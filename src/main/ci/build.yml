@@ -10,8 +10,6 @@ resources:
   source:
     repository: vsv0001/restfuldemo
     tag: test
-    username: "vsv0001"
-    password: "Olive!18"   
 
 jobs:
 - name: main
