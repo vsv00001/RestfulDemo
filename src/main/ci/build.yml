@@ -1,23 +1,26 @@
+---
 resources:
-- name: git-repo
-  type: git
-  source:
-    uri: https://github.com/vsv00001/RestfulDemo.git
-    branch: master
+  - name: git-repo
+    type: git
+    source:
+      uri: https://github.com/vsv00001/RestfulDemo.git
+      branch: master
 
-- name: restful-demo
-  type: docker-image
-  source:
-    repository: vsv0001/restfuldemo
-    tag: test
+  - name: restful-demo
+    type: docker-image
+    source:
+      repository: vsv0001/restfuldemo
+      tag: test
+      username: ((dockerhub-name))
+      password: ((dockerhub-pwd))
 
 jobs:
-- name: main
-  plan:
-  - get: git-repo
-    trigger: true
-  - task: build
-    file: git-repo/src/main/ci/build.yml
-  - put: restful-demo
-    params:
-      build: git-repo
+  - name: main
+    plan:
+      - get: git-repo
+        trigger: true
+      - task: build
+        file: git-repo/src/main/ci/build.yml
+      - put: restful-demo
+        params:
+          build: git-repo
