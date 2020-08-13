@@ -1,0 +1,26 @@
+resources:
+- name: git-repo
+  type: git
+  source:
+    uri: git@github.com:ruanbekker/docker-remote-tunnel.git
+    uri: https://github.com/vsv00001/RestfulDemo.git
+    branch: master
+    username: vsv0007@outlook.com
+    password: Jaisairam!1
+
+- name: restful-demo
+  type: docker-image
+  source:
+    repository: vsv0001/restfuldemo
+    tag: test
+    username: vsv0001
+    password: Olive!18   
+
+jobs:
+- name: publish
+  plan:
+  - task: build
+    file: git-repo/src/main/ci/build.yml
+  - put: restful-image
+    params:
+      build: git-repo
