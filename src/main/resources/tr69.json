@@ -1,0 +1,120 @@
+"xtools-power-status": {
+  "id": 44,
+  "name": "xtools-power-status",
+  "description": "retrieves device power status",
+  "tr069Variables": [
+    {
+      "key": 1,
+      "parameterName": "Device.DeviceInfo.X_COMCAST-COM_PowerStatus",
+      "description": "Power status of the device. Enumeration of: PowerON, Standby, PowerOFF (Default)",
+      "access": "READ_ONLY",
+      "enumMap": {
+        "1": "PowerOn",
+        "2": "Standby",
+        "3": "PowerOFF"
+      },
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    }
+  ]
+},
+"xtools-existing-firmware" :{
+  "id": 32,
+  "name": "xtools-existing-firmware",
+  "description": "existing firmware",
+  "tr069Variables": [
+    {
+      "key": 1,
+      "parameterName": "Device.DeviceInfo.X_COMCAST-COM_FirmwareFilename",
+      "description": "Filename of the firmware currently running on the device.",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    }
+  ]
+},
+"xtools-xre-connection-table":{
+  "id": 4,
+  "name": "xtools-xre-connection-table",
+  "description": "XRE connection table values",
+  "tr069Variables": [
+    {
+      "key": 1,
+      "parameterName": "Device.X_COMCAST-COM_Xcalibur.Client.XRE.ConnectionTable.xreConnURL",
+      "description": "Connection URL",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    },
+    {
+      "key": 1,
+      "parameterName": "Device.X_COMCAST-COM_Xcalibur.Client.XRE.ConnectionTable.xreConnStatus",
+      "description": "Connection Status - use standard socket connection states",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    },
+    {
+      "key": 1,
+      "parameterName": "Device.X_COMCAST-COM_Xcalibur.Client.XRE.ConnectionTable.xreConnIfName",
+      "description": "Logical Interface name connection is created on",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    },
+    {
+      "key": 1,
+      "parameterName": "Device.X_COMCAST-COM_Xcalibur.Client.XRE.ConnectionTable.xreConnEstTs",
+      "description": "Connection intitiation timestamp",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    },
+    {
+      "key": 1,
+      "parameterName": "Device.X_COMCAST-COM_Xcalibur.Client.XRE.ConnectionTable.xreConnRetryAttempts",
+      "description": "No of retry attemtps before conn was established",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    }
+  ]
+},
+"xtool-device-uptime": {
+  "id": 1000335,
+  "name": "xtool-device-uptime",
+  "description": "Device uptime for the IPSTB",
+  "tr069Variables": [
+    {
+      "key": 1,
+      "parameterName": "Device.DeviceInfo.UpTime",
+      "description": "Device uptime for the IPSTB",
+      "access": "READ_ONLY",
+      "enumMap": null,
+      "isActive": "Y",
+      "type": null,
+      "name": null,
+      "value": null
+    }
+  ]
+}
