@@ -23,4 +23,4 @@ jobs:
         file: git-repo/src/main/ci/build.yml
       - put: restful-demo
         params:
-          build: git-repo/Dockerfile
+          build: git-repo/
